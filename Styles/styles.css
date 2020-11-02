@@ -33,3 +33,85 @@ html {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
 }
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    /*Para poner un color combinado el lineal-gradient*/
+}
+
+.image-Header {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header-title-container {
+    width: 90%;
+    min-width: 288px;
+    /*No va a poder ser mas pequeño que 288px*/
+    max-width: 900px;
+    /*No va a poder pasarse de 900px si la pantalla
+     lo permite, osea si permite mas de 900px*/
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header-title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    /*Interlineado*/
+    color: var(--just-white);
+}
+
+.header-title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header-title-container .button-header {
+    position: absolute;
+    /*Es para mover el boton, y esto me lo permite el position: absolute*/
+    /*Aqui podemos poner un left para acomodarlo*/
+    left: calc(50% - 114.5px);
+    /*Para generar un calculo para centrar el elemento*/
+    top: 270px;
+    /*top mueve el elemento arriba*/
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombras*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    /*End border*/
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black)
+}
+
+.button-header span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../Assets/icons/arrow-down.svg');
+}
