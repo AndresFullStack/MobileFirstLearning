@@ -70,8 +70,8 @@ header {
 .header-title-container h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    line-height: 2.6rem;
     /*Interlineado*/
+    line-height: 2.6rem;
     color: var(--just-white);
 }
 
@@ -114,4 +114,56 @@ header {
     height: 8px;
     margin-left: 10px;
     background-image: url('../Assets/icons/arrow-down.svg');
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container-title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /*Para la imagen de fondo de pantalla*/
+    background-image: url('../Assets/imgs/bitcoin.svg');
+    /*Para poder hacer que la imagen escale dependiendo de la pantalla*/
+    background-size: cover;
+    /*Posicion en X y en eje Y, lo pondremos center para que siempre en el eje X o Y se centre el background image*/
+    background-position: center;
+    /*Para que no se repita el background*/
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container-title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
 }
