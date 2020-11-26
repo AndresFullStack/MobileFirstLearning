@@ -1,0 +1,271 @@
+/*
+Generar los estilos -- orden
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales (sombras, etc)
+5. Otros
+*/
+
+:root {
+    /*Generar Variables*/
+    /*Colores que se van a usar */
+    --bitcoin-orange: #F7931A;
+    /*Nombre de la variable que va a representar el color naranja que vamos a usar*/
+    --soft-orange: #FFE9D5;
+    --secundary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    /*Para poner un color combinado el lineal-gradient*/
+}
+
+.image-Header {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header-title-container {
+    width: 90%;
+    min-width: 288px;
+    /*No va a poder ser mas pequeño que 288px*/
+    max-width: 900px;
+    /*No va a poder pasarse de 900px si la pantalla
+     lo permite, osea si permite mas de 900px*/
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header-title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    /*Interlineado*/
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header-title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header-title-container .button-header {
+    position: absolute;
+    /*Es para mover el boton, y esto me lo permite el position: absolute*/
+    /*Aqui podemos poner un left para acomodarlo*/
+    left: calc(50% - 114.5px);
+    /*Para generar un calculo para centrar el elemento a medida
+    que crezca*/
+    top: 270px;
+    /*Permite desplazar un elemento respecto a el tamaño del 
+    elemento padre*/
+    /*top mueve el elemento 270px hacia abajo respecto a donde este 
+    el elemento padre*/
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombras*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    /*End border*/
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black)
+}
+
+.button-header span {
+    display: inline-block;
+    /*se le pone este display ya que la etiqueta <span> por defecto
+    tiene un display:inline, y ese display no puede tener medidas
+    como width o height, por lo tanto el logo no se veria, porque 
+    es svg y el elemento svg requiere medidas como width y height*/
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../Assets/icons/arrow-down.svg');
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container-title {
+    width: 90%;
+    min-width: 288px;
+    /*Si la pantalla se reduce, lo minimo que
+    va a poder medir ese titulo seria 288px*/
+    max-width: 900px;
+    /*Si la pantalla crece, lo maximo que va 
+    a poder medir ese titulo seria 900px*/
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /*Para la imagen de fondo de pantalla*/
+    background-image: url('../Assets/imgs/bitcoin.svg');
+    /*Para poder hacer que la imagen escale dependiendo de la pantalla*/
+    background-size: cover;
+    /*Posicion en X y en eje Y, lo pondremos center para que siempre en el eje X o Y se centre el background image*/
+    background-position: center;
+    /*Para que no se repita el background*/
+    background-repeat: no-repeat;
+    /*Este no afecta, ya que el background al tener un contenedor 
+    definido este mismo no se puede repetir
+    Es mas que todo para buenas practicas*/
+}
+
+.main-exchange-container-title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.main-currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.main-currency-table .currency-table-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+.currency-table-container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.currency-table-container table {
+    width: 100%;
+    height: 100%;
+    /*Para que la tabla ocupe todo el espacio que 
+    el contenedor padre le dejo*/
+}
+
+.currency-table-container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+
+.currency-table-container .table_top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.currency-table-container .table_top-right {
+    border-radius: 0 15px 0 0;
+}
+
+.currency-table-container .table_bottom-left {
+    border-radius: 0 0 0 15px;
+}
+
+.currency-table-container .table_bottom-right {
+    border-radius: 0 0 15px 0;
+}
+
+.currency-table-container .table_right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.currency-table-container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/trending-down-red.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.currency-table-container .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/trending-up-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*HACER LA SEGUNDA TABLA*/
