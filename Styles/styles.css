@@ -166,9 +166,6 @@ main {
     /*Este no afecta, ya que el background al tener un contenedor 
     definido este mismo no se puede repetir
     Es mas que todo para buenas practicas*/
-    -webkit-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.38);
-    box-shadow: -2px 2px 19px -3px rgba(0, 0, 0, 0.38);
 }
 
 .main-exchange-container-title h2 {
@@ -244,8 +241,8 @@ main {
     border-radius: 0 0 15px 0;
 }
 
-.table_right {
-    font-size: 1.4rem;
+.currency-table-container .table_right {
+    font-size: 1.6rem;
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
@@ -342,4 +339,156 @@ main {
     border-radius: 8px;
     background-color: var(--soft-blue);
     color: var(--warm-black);
+}
+
+.commission-table-container .table_right {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail-batata-logo {
+    /*Esta sirve tambien para limitar el movimiento de esa etiqueta <span>, gracias a el position: relative del 
+    contenedor padre; Este limita el movimiento a solo poder moverse dentro del contenedor o elemento padre*/
+    position: absolute;
+    /*gracias al absolute no tendremos que ponerle un display:inline-block*/
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    /*Consultar como hacer esto de la mejor manera*/
+    background-image: url(../assets/icons/Logo.svg);
+}
+
+.product-detail-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail-title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail-title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #6d6d66;
+}
+
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(../assets/icons/clock.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(../assets/icons/eye.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card-money {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card-money .money {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(../assets/icons/dollar-sign.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card-money .product--card-title-money {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--just-white);
+}
+
+.product-detail--card-money .product--card-body-money {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(../assets/icons/check-circle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
