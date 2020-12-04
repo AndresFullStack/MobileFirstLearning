@@ -564,7 +564,7 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
     margin: 50px 10px 0;
@@ -612,7 +612,7 @@ main {
     display: inline-block;
     position: absolute;
     top: 50px;
-    left: 75px;
+    left: 55px;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -654,7 +654,7 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
     margin: 50px 10px 0;
@@ -703,7 +703,7 @@ main {
     display: inline-block;
     position: absolute;
     top: 55px;
-    left: 75px;
+    left: 55px;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -753,4 +753,54 @@ main {
     background-color: var(--secundary-blue);
     color: var(--just-white);
     border-radius: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    padding: 16px 20px 0 20px;
+    background-color: var(--bitcoin-orange);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-links .elements-footer {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    /*Espacio entre las letras*/
+}
+
+.footer-img {
+    width: 87px;
+    height: 82px;
+    position: relative;
+    /*El relative permite que el absolute del elemento hijo tenga limites respecto al padre directo que tenga un 
+    position: relative*/
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.footer-img img {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.footer-img .span-del-logo {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
 }
