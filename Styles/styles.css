@@ -189,7 +189,7 @@ main {
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 25px;
     font-family: "Inter", sans-serif;
 }
 
@@ -293,7 +293,7 @@ main {
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 25px;
     font-family: "Inter", sans-serif;
 }
 
@@ -557,6 +557,14 @@ main {
     scroll-snap-type: x proximity;
 }
 
+.main-tables-container {
+    display: flex;
+    /*Aun no se a implimentado en todos los navegadores gap: 50px;*/
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 
 /*IMPORTANTE*/
 
@@ -786,7 +794,7 @@ main {
     position: relative;
     /*El relative permite que el absolute del elemento hijo tenga limites respecto al padre directo que tenga un 
     position: relative*/
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 10px;
 }
 
