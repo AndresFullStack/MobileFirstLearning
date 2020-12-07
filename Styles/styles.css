@@ -550,7 +550,7 @@ main {
 
 .plans-container-slider {
     display: flex;
-    height: 316px;
+    height: 326px;
     /*Aun no se a implimentado en todos los navegadores gap: 50px;*/
     overflow-x: scroll;
     overscroll-behavior-x: contain;
