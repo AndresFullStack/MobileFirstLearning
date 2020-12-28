@@ -76,7 +76,7 @@ header {
     color: var(--just-white);
 }
 
-.header-title-container p {
+.header-title-container .text-header {
     margin-top: 25px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -158,7 +158,7 @@ main {
     margin: 0 auto;
     margin-bottom: 50px;
     /*Para la imagen de fondo de pantalla*/
-    background-image: url('../Assets/imgs/bitcoin.svg');
+    background-image: url('../assets/imgs/bitcoin.svg');
     /*Para poder hacer que la imagen escale dependiendo de la pantalla*/
     background-size: cover;
     /*Posicion en X y en eje Y, lo pondremos center para que siempre en el eje X o Y se centre el background image*/
