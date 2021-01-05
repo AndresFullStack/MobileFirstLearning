@@ -559,14 +559,6 @@ main {
     scroll-snap-type: x proximity;
 }
 
-.main-tables-container {
-    display: flex;
-    /*Aun no se a implimentado en todos los navegadores gap: 50px;*/
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
-
 
 /*IMPORTANTE*/
 
